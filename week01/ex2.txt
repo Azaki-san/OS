@@ -1,0 +1,8 @@
+    1  pwd
+    2  pwd
+    3  ls
+    4  ls
+    5  pwd
+    6  whoami
+    7  host
+    8  history > ~/week01/ex2.txt
