@@ -15,9 +15,11 @@ cd ~/homeF
 touch home.txt
 date
 sleep 3
+cd ~/rootF
 ls -ltr / > ~/rootF/root.txt
 cat ~/rootF/root.txt
 ls
+cd ~/homeF
 ls -ltr ~ > ~/homeF/home.txt
 cat ~/homeF/home.txt
 ls
