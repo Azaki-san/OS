@@ -9,7 +9,7 @@ int const_tri(int* p, int n) {
     } else if (n == 1 || n == 2) {
         return 1;
     } else {
-        for (int i = 0; i <= n; i++) {
+        for (int i = 2; i < n; i++) {
             int temp = p[0] + p[1] + p[2];
             p[0] = p[1];
             p[1] = p[2];
