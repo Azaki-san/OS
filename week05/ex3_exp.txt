@@ -1,3 +1,0 @@
-So, from this exercise we found that we can divide our program in threads.
-As the number of threads increases, the program's execution time decreases. But only to a certain point!
-After that point the performance will not be significantly improved. This behavior is a result of the trade-off between parallelism and the costs associated with thread creation.

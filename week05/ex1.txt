@@ -1,5 +1,0 @@
-Unnamed pipes allow only one-way communication from a publisher to a subscriber using stdin/stdout.
-Named pipes provide bidirectional communication between processes. 
-So, for each subscriber we have named pipe for receving message(s).
-Publisher just write messages to pipes of subscribers.
-This exercise demonstrated inter-process communication through pipes and named pipes, essential for multi-process applications.
