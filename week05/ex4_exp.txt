@@ -1,0 +1,5 @@
+Exercise 4 uses a global state approach with mutexes.
+It may have more efficient resource utilization and reduced thread overhead, potentially making it more suitable for certain scenarios.
+Mutexes are used to prevent shared variable race conditions.
+As we can see from results, mutexes sometimes faster, but in dividing, for example, by 100 threads - slower.
+So, it depends.
