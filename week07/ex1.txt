@@ -1,0 +1,5 @@
+First Fit: throughput of 36.56 queries/second
+Best Fit: throughput of 36.13 queries/second
+Worst Fit: throughput of 41.85 queries/second
+The "Worst Fit" algorithm has the highest throughput, which suggests that it is doing a better job of managing memory allocations and deallocations, leading to more efficient memory utilization. However, it's important to note that the actual performance of these algorithms can vary depending on the specific workload and input data (and also on the machine). In some cases, a different allocation strategy might perform better.
+It was tested a several times and the worst fit algorithm in 9 of 10 variants have best results.
