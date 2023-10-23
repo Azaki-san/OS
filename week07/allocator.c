@@ -30,6 +30,7 @@ void allocate_first_fit(unsigned int adrs, int size) {
                 for (int j = i - size + 1; j <= i; j++) {
                     memory[j] = adrs;
                 }
+                return;
             }
         } else {
             count = 0;
@@ -94,7 +95,7 @@ void allocate_worst_fit(unsigned int adrs, int size) {
 int main() {
     init_memory();
     for (int i = 0; i < 3; i++) {
-        FILE *file = fopen("queries.txt", "r");
+        FILE *file = fopen("/home/andrew/CLionProjects/week07/queries.txt", "r");
         if (file == NULL) {
             perror("Error opening the file");
             return EXIT_FAILURE;
