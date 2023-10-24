@@ -5,10 +5,11 @@
 #include <sys/mman.h>
 #include <ctype.h>
 #include <sys/stat.h>
-#define FILE_SIZE (500 * 1024 * 1024)
+#define FILE_SIZE (500 * 1000 * 1000)
 
 int main() {
     int fd = open("text.txt", O_CREAT | O_RDWR, S_IRUSR | S_IWUSR);
+    ftruncate(fd, 0);
     if (fd == -1) {
         perror("open");
         exit(1);
@@ -49,6 +50,7 @@ int main() {
                     close(random_fd);
                     exit(1);
                 }
+                file_size++;
                 char_count = 0;
             }
             file_size++;
