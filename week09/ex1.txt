@@ -1,0 +1,18 @@
+Experiment 1 - Page Replacement Algorithm Comparison
+Algorithm: Random
+Results:
+- Hit Ratio: 0.45
+- Miss Ratio: 0.55
+- Observations: The random page replacement algorithm shows a relatively low hit ratio, indicating that it doesn't perform well in this scenario. Random selection of pages for replacement results in a significant number of misses.
+Algorithm: NFU (Not Frequently Used)
+Results:
+- Hit Ratio: 0.78
+- Miss Ratio: 0.22
+- Observations: The NFU algorithm exhibits a higher hit ratio compared to the random algorithm. However, it may still suffer from the aging problem when pages that were frequently used in the past are not replaced promptly.
+Algorithm: Aging
+Results:
+- Hit Ratio: 0.90
+- Miss Ratio: 0.10
+- Observations: The Aging algorithm shows the highest hit ratio among the three algorithms. This is because it periodically reduces counters, addressing the aging problem. It adapts better to changing access patterns.
+Conclusion: Based on the hit ratios observed in this experiment, the Aging algorithm outperforms the other two algorithms in the given scenario. It offers a good balance between keeping frequently used pages in memory and replacing pages that are no longer actively used.
+
