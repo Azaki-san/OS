@@ -1,0 +1,14 @@
+New file /home/andrew/CLionProjects/week10/check/myfile1.txt created.
+New file /home/andrew/CLionProjects/week10/check/myfile1.txt opened.
+New file /home/andrew/CLionProjects/week10/check/myfile1.txt modified.
+New file /home/andrew/CLionProjects/week10/check/myfile11.txt created.
+New file /home/andrew/CLionProjects/week10/check/myfile12.txt created.
+New file /home/andrew/CLionProjects/week10/check/myfile1.txt opened.
+New file /home/andrew/CLionProjects/week10/check/myfile1.txt accessed.
+File /home/andrew/CLionProjects/week10/check/myfile1.txt deleted.
+New file /home/andrew/CLionProjects/week10/check/myfile11.txt opened.
+New file /home/andrew/CLionProjects/week10/check/myfile11.txt modified.
+New file /home/andrew/CLionProjects/week10/check/myfile13.txt created.
+
+This is how monitor gives me events.
+The main problem is that we work from the home directory. It's no secret that if you switch to other disks, for example, /, then you can't move a file without saving its inode. Because of this, I was forced to use copy and delete. Naturally, the inode has changed, so myfile11 and myfile12 are no longer links to myfile1. However, myfile13 is still a link, so it is linked to the file that lies in /tmp.
