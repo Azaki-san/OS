@@ -1,0 +1,45 @@
+First run:
+file2
+ls
+bash
+lost+found
+libpcre2-8.so.0
+..
+cat
+ex1
+libtinfo.so.6
+file1
+libc.so.6
+libselinux.so.1
+.
+echo
+Second run:
+lib
+bin
+.
+snap
+lost+found
+var
+mnt
+..
+libx32
+boot
+lib32
+test
+sys
+home
+root
+sbin
+opt
+tmp
+etc
+usr
+media
+run
+lib64
+proc
+dev
+cdrom
+srv
+
+This script creates a distinct file system, 'lofsdisk,' to bolster security for the program ex1.c. By isolating it, we prevent direct access to the original root, reducing the risk of unintended system interference. Consequently, the results in ex1.txt differ, reflecting variations between the files in each root directory.
